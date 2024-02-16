@@ -1,4 +1,4 @@
-<span class="h3 text-muted">Projects</span>
+<div class="h3 text-muted mb-3">Projects</div>
 <div *ngIf="repos.length != 0">
   <div mdbScrollspyElement="scrollspy-2" id="sectionProjectsId" *ngFor="let repo of repos">
     <h5>{{ repo.name }}</h5>
@@ -12,8 +12,8 @@
   </div>
 </div>
 <div *ngIf="repos.length == 0">
-  <div class="alert-absolute">
-    Sorry - we are not able to display projests summary at this moment. However, you can check the page yourself!<br />
-    Please see <a href="https://github.com/alerGeek">https://github.com/alerGeek</a>.
+  <div class="alert-warning alert-link">
+    Sorry - we are not able to fetch projects details from Github REST Api at this moment. However, you can check the page yourself!<br />
+    Please check <a href="https://github.com/alerGeek">https://github.com/alerGeek</a> and see my pinned repositories.
   </div>
 </div>
