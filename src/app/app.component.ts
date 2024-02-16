@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { environment } from '../environments/environment';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = environment.title;
+  title = 'Personal page';
 }

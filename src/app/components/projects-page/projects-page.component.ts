@@ -48,4 +48,6 @@ export class ProjectsPageComponent implements AfterViewInit {
         },
       });
   }
+
+  protected readonly alert = alert;
 }

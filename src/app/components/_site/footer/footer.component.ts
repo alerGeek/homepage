@@ -9,6 +9,7 @@ import { GithubClientApiService } from '../../../services/github-client-api.serv
 export class FooterComponent implements OnInit {
   deploySha: string = '';
   deployDate: string = '';
+  isHidden = true;
 
   constructor(private githubApi: GithubClientApiService) {}
 
