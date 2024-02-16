@@ -32,6 +32,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillElementComponent } from './components/skill-element/skill-element.component';
+import { ScrollNavbarComponent } from './components/_site/scroll-navbar/scroll-navbar.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,8 @@ import { SkillElementComponent } from './components/skill-element/skill-element.
     CvPageComponent,
     ExperiencePageComponent,
     SkillElementComponent,
+    ScrollNavbarComponent,
+    ScrollNavbarComponent,
   ],
   imports: [
     BrowserModule,

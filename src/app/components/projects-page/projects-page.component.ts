@@ -15,17 +15,6 @@ export class ProjectsPageComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.githubApi
       .findReposWithPortfolioTag()
-      // .then(value => {
-      //   let items = value.data.items;
-      //   items.filter((repo: any) => {
-      //     repo.topics.includes("portfolio-included");
-      //     console.log("Owner:" + repo.owner);
-      //     console.log("Login:" + repo.owner.login);
-      //   });
-      //   console.log(items);
-      //   return items;
-      // });
-
       .subscribe({
         next: (repos: any[]) => {
           repos.forEach((urls) => {
@@ -48,6 +37,4 @@ export class ProjectsPageComponent implements AfterViewInit {
         },
       });
   }
-
-  protected readonly alert = alert;
 }

@@ -1,6 +1,6 @@
 <div class="p-4 bg-body-tertiary">
   <div class="container-fluid">
-    <div class="row content-body order-2">
+    <div class="row content-body">
       <div class="col-lg-6 mb-2 mb-md-0 d-flex flex-column align-content-center align-items-center">
         <img
           class="img-fluid card-img"
@@ -12,24 +12,12 @@
         <app-cv-page></app-cv-page>
       </div>
     </div>
-    <div class="row content-footer order-1">
+    <div class="row content-footer">
       <div class="col-lg-6 mb-2 mb-md-0 d-flex flex-column align-content-center align-items-center">
         <app-contact-form></app-contact-form>
       </div>
       <div class="col-lg-6 mb-4 mb-md-0 d-flex flex-column align-content-center align-items-center">
-        <div id="scrollspy">
-          <ul mdbScrollspy="scrollspy" class="nav flex-row nav-links">
-            <li class="btn btn-md nav-item btn-tertiary">
-              <a mdbScrollspyLink="sectionAboutPage" class="nav-link">About</a>
-            </li>
-            <li class="btn btn-md nav-item btn-tertiary">
-              <a mdbScrollspyLink="sectionExperiencePage" class="nav-link">Experience</a>
-            </li>
-            <li class="btn btn-md nav-item btn-tertiary">
-              <a mdbScrollspyLink="sectionProjectsPage" class="nav-link">Projects</a>
-            </li>
-          </ul>
-        </div>
+        <app-scroll-navbar></app-scroll-navbar>
       </div>
     </div>
   </div>
