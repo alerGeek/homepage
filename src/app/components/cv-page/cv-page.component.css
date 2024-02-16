@@ -1,14 +1,15 @@
 .scrollspy-example {
   position: relative;
   max-height: 60vh;
-  overflow: auto;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 /* For large (lg) screens */
 @media (min-width: 992px) and (max-width: 1199.99px) {
   .scrollspy-example {
     max-height: 70vh;
+    overflow: auto;
+    overflow-y: scroll;
   }
 }
 
@@ -16,6 +17,8 @@
 @media (min-width: 1200px) {
   .scrollspy-example {
     max-height: 75vh;
+    overflow: auto;
+    overflow-y: scroll;
   }
 }
 

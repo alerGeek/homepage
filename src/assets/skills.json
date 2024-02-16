@@ -31,5 +31,7 @@
   { "name": "Confluence", "type": "COLLABORATION_TOOLS" },
   { "name": "TDD", "type": "COLLABORATION_TOOLS" },
   { "name": "DDD", "type": "COLLABORATION_TOOLS" },
-  { "name": "Angular", "type": "FRONTEND" }
+  { "name": "Angular", "type": "FRONTEND" },
+  { "name": "Frontend", "type": "FRONTEND" },
+  { "name": "MDBootstrap", "type": "FRONTEND" }
 ]

@@ -1,3 +1,4 @@
+<span class="h3 text-muted">Projects</span>
 <div *ngIf="repos.length != 0">
   <div mdbScrollspyElement="scrollspy-2" id="sectionProjectsId" *ngFor="let repo of repos">
     <h5>{{ repo.name }}</h5>
@@ -11,5 +12,6 @@
   </div>
 </div>
 <div *ngIf="repos.length == 0">
-  <app-page-not-found></app-page-not-found>
+  <div class="alert-absolute">Sorry - we are not able to display projests summary at this moment. However, you can check the page yourself!<br/>
+  Please see <a href="https://github.com/alerGeek">https://github.com/alerGeek</a>. </div>
 </div>

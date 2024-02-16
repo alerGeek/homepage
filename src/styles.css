@@ -22,4 +22,9 @@ body {
   body {
     overflow-y: auto; /* Enable vertical scrolling */
   }
+
+  .content-footer {
+    position: fixed;
+    margin-bottom: 0;
+  }
 }
