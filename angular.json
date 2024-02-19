@@ -25,7 +25,8 @@
           "skipTests": true
         },
         "@schematics/angular:modules": {
-          "skipTests": true        }
+          "skipTests": true
+        }
       },
       "root": "",
       "sourceRoot": "src",

@@ -13,28 +13,26 @@ export class ProjectsPageComponent implements AfterViewInit {
   constructor(private githubApi: GithubClientApiService) {}
 
   ngAfterViewInit() {
-    this.githubApi
-      .findReposWithPortfolioTag()
-      .subscribe({
-        next: (repos: any[]) => {
-          repos.forEach((urls) => {
-            console.log(urls);
-            this.githubApi.repoDetails(urls).subscribe({
-              next: (details: any) => {
-                this.repos.push(<ProjectData>{
-                  name: details.name,
-                  htmlUrl: details.html_url,
-                  tags: details.topics,
-                  description: details.description,
-                });
-              },
-            });
+    this.githubApi.findReposWithPortfolioTag().subscribe({
+      next: (repos: any[]) => {
+        repos.forEach((urls) => {
+          console.log(urls);
+          this.githubApi.repoDetails(urls).subscribe({
+            next: (details: any) => {
+              this.repos.push(<ProjectData>{
+                name: details.name,
+                htmlUrl: details.html_url,
+                tags: details.topics,
+                description: details.description,
+              });
+            },
           });
-        },
-        error: (err: any) => {
-          console.error('Could not fetch details.');
-          console.error(err);
-        },
-      });
+        });
+      },
+      error: (err: any) => {
+        console.error('Could not fetch details.');
+        console.error(err);
+      },
+    });
   }
 }
