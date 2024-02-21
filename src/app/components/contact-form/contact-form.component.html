@@ -1,14 +1,18 @@
 <div class="btn-group-lg d-flex justify-content-center">
   <div class="d-flex justify-content-center align-items-center align-items-stretch">
-    <button
-      class="btn btn-link btn-md"
-      [mdbTooltip]="'Copy email'"
-      (click)="copyText('promucha@gmail.com')"
-      role="link"
-      mdbRipple
-    >
+    <button class="btn btn-link btn-md" [mdbTooltip]="'Copy email'" (click)="copyEmail()" role="link" mdbRipple>
       <i class="fas fa-at fa-2x"></i>
     </button>
+    <a
+      href="mailto:{{ email }}?subject=[Portfolio]"
+      class="btn btn-link btn-md"
+      mdbTooltip="Send email in default application"
+      target="_blank"
+      role="button"
+      mdbRipple
+    >
+      <i class="fas fa-envelope fa-2x"></i>
+    </a>
     <a
       class="btn btn-link btn-md"
       [mdbTooltip]="'Open Github Profile'"
