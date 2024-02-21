@@ -1,4 +1,17 @@
-### Context
+# Personal page
+<!-- TOC -->
+* [Personal page](#personal-page)
+  * [Context](#context)
+  * [Tech stack](#tech-stack)
+  * [Deployment](#deployment)
+  * [Development](#development)
+    * [Setup](#setup)
+      * [Prerequirements](#prerequirements)
+      * [Install](#install)
+      * [Build project](#build-project)
+    * [Check style](#check-style)
+<!-- TOC -->
+## Context
 
 Static personal page created with Angular, deployed with Github Actions and styled with MDBootstrap.
 It consists of:
@@ -7,14 +20,14 @@ It consists of:
 - automatically listed personal projects based on Github Projects topics and description,
 - contact forms.
 
-### Tech stack
+## Tech stack
 
 - Node 20
 - Angular
 - MDBootstrap
 - Github Rest Api
 
-### Deployment
+## Deployment
 
 Page deployment is fully automated with CI/CD flows made as Github Actions.
 Currently, it contains of following flows:
@@ -28,15 +41,15 @@ Currently, it contains of following flows:
   - build project with github configuration
   - deploy on github pages
 
-### Development
+## Development
 
-#### Setup
+### Setup
 
-##### Prerequirements
+#### Pre-requirements
 
 - Node in version 20
 
-##### Install
+#### Install
 
 Install necessary dependencies
 
@@ -44,7 +57,7 @@ Install necessary dependencies
 npm install
 ```
 
-##### Build project
+#### Build project
 
 - build in developer mode
   - by default, page should be available on 4200
@@ -57,7 +70,7 @@ npm install
     ng build --configuration production && ng serve
     ```
 
-##### Check style
+### Check style
 
 - check style for changes in \*.ts files
   ```shell

@@ -21,6 +21,13 @@
       "options": {
         "parser": "json"
       }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "requirePragma": true,
+        "embeddedLanguageFormatting": "auto"
+      }
     }
   ]
 }
